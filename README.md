@@ -1,4 +1,4 @@
-# Animato
+# gioielleria
 esempio di https://tinesoft.github.io/ngx-wow/doc/index.html
 e https://therichpost.com/how-to-implement-wow-js-in-angular-8/
 
@@ -16,4 +16,4 @@ npm install --save ngx-wow
 npm install bootstrap --save
 npm install bootstrap-icons --save
 
-ng build --base-href "/animato/"
+ng build --base-href "/gioielleria/"

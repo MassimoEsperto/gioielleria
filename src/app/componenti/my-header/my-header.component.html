@@ -1,6 +1,7 @@
 <!-- Navbar Start -->
 <div class="container-fluid fixed-top px-0 wow fadeIn"
-    [ngClass]="{'top-45': posizione === 1,'bg-white shadow': posizione === 2,'nascosto': posizione === 3 }" data-wow-delay="0.1s">
+    [ngClass]="{'top-45': posizione === 1,'bg-white shadow': posizione === 2,'nascosto': posizione === 3 }"
+    data-wow-delay="0.1s">
     <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
         <div class="col-lg-6 px-5 text-start">
             <small><i class="bi bi-geo-alt-fill me-2"></i>123 Street, New York, USA</small>
@@ -17,8 +18,22 @@
 
     <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
         <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-            <h1 class="fw-bold text-primary m-0">Ni<span class="text-secondary">ko</span>lasc</h1>
+            <h1 class="fw-bold text-primary m-0">Am<span class="text-secondary">az</span>on</h1>
         </a>
+        <div>
+            <div class="input-group flex-nowrap">
+                
+                <input type="search" list="datalistOptions" class="form-control" placeholder="search" aria-label="search" aria-describedby="addon-wrapping">
+                <span class="input-group-text" id="addon-wrapping"><i class="bi bi-search"></i></span>  
+                <datalist id="datalistOptions">
+                    <option value="San Francisco">
+                    <option value="New York">
+                    <option value="Seattle">
+                    <option value="Los Angeles">
+                    <option value="Chicago">
+                  </datalist>
+            </div>
+        </div>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -39,15 +54,19 @@
                 <a href="contact.html" class="nav-item nav-link">Contact Us</a>
             </div>
             <div class="d-none d-lg-flex ms-2">
-                <a class="btn-sm-square bg-white rounded-circle ms-3" href="">
-                    <small class="bi bi-search text-body"></small>
-                </a>
+           
                 <a class="btn-sm-square bg-white rounded-circle ms-3" href="">
                     <small class="bi bi-person-fill text-body"></small>
                 </a>
-                <a class="btn-sm-square bg-white rounded-circle ms-3" href="">
-                    <small class="bi bi-cart-fill text-body"></small>
-                </a>
+              
+                
+                <button type="button" class="btn btn-light position-relative">
+                    <i class="bi bi-cart-fill"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                      5
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                  </button>
             </div>
         </div>
     </nav>
