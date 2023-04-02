@@ -1,4 +1,44 @@
+@import 'assets/css/padding.scss';
+@import 'assets/css/margin.scss';
+@import 'assets/css/my-flex.scss';
+
+
+/* custom */
+$corallo: #7b1b02;
+.bg-corallo{
+    background-color: $corallo;
+    color: white;
+}
+
+.bg-transparent{
+    background-color: transparent;
+    color: white;
+}
+
+.btn-transparent{
+    background-color: transparent;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+
+.pnx-msg-icon{
+    font-size: 1.6em;
+}
+.menu-laterale{
+    color: black;
+}
+
+.input-group-text {
+    background-color: #fcbb6a;
+    border: none;
+}
+
+
 /********** Template CSS **********/
+
+
+
 :root {
     --primary: #3CB815;
     --secondary: #F65005;

@@ -16,6 +16,9 @@ import { PresentazioneComponent } from './componenti/presentazione/presentazione
 import { CaratteristicaComponent } from './componenti/caratteristica/caratteristica.component';
 import { VenditeComponent } from './componenti/vendite/vendite.component';
 import { InteressiComponent } from './componenti/interessi/interessi.component';
+import { MyNavSearchComponent } from './componenti/my-nav-search/my-nav-search.component';
+import { MyHeaderSearchComponent } from './componenti/my-header-search/my-header-search.component';
+import { MyMenuLateraleComponent } from './componenti/my-menu-laterale/my-menu-laterale.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,10 @@ import { InteressiComponent } from './componenti/interessi/interessi.component';
     PresentazioneComponent,
     CaratteristicaComponent,
     VenditeComponent,
-    InteressiComponent
+    InteressiComponent,
+    MyNavSearchComponent,
+    MyHeaderSearchComponent,
+    MyMenuLateraleComponent
   ],
   imports: [
     BrowserModule,
