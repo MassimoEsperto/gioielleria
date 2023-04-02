@@ -4,7 +4,7 @@ import { NgwWowService } from 'ngx-wow';
 @Component({
   selector: 'app-root',
   template: ` <!--<my-header></my-header>-->
- <my-header-search></my-header-search>
+ <my-header></my-header>
   <router-outlet></router-outlet>
   <my-footer></my-footer>`
 
