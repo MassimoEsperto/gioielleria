@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'my-header',
@@ -9,6 +10,7 @@ export class MyHeaderComponent implements OnInit {
 
   posizione: number = 0
   lastScroll: number = 0
+  product: string = ""
 
   @HostListener("window:scroll", []) onWindowScroll() {
 
@@ -37,9 +39,14 @@ export class MyHeaderComponent implements OnInit {
   }
 
 
-  constructor() { }
+  constructor(private router: Router) { }
 
-  ngOnInit(): void {
+  ngOnInit() { }
+
+  searchProduct() {
+    console.log("prodotti", this.product)
+    this.router.navigate(['/product',this.product])
+    
   }
 
 }

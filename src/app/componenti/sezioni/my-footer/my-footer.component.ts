@@ -12,4 +12,5 @@ export class MyFooterComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  isAdmin: boolean = false
 }

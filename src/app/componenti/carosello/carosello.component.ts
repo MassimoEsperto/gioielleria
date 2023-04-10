@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'carosello',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CaroselloComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  searchProduct() {
+    this.router.navigate(['/product'])
+  }
 }

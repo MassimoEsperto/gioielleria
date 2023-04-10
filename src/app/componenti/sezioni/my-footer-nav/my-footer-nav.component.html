@@ -1,0 +1,51 @@
+<div class="footer-fisso d-block d-sm-block d-md-block d-lg-none">
+
+    <div class="navigazione">
+
+        <div *ngIf="!isCollapse" routerLink="/home">
+            <div class="pnx-msg-icon">
+                <i class="bi bi-house-fill"></i>
+            </div>
+        </div>
+
+         <div *ngIf="isCollapse"  routerLink="/home" data-bs-toggle="collapse" data-bs-target="#impostazioni" aria-expanded="false" aria-controls="impostazioni" (click)="isCollapse=false">
+              <div class="pnx-msg-icon">
+                <i class="bi bi-house-fill"></i>
+            </div>
+        </div>
+
+
+        <div *ngIf="!isCollapse" routerLink="/utente">
+            <my-user></my-user>
+        </div>
+
+         <div *ngIf="isCollapse" routerLink="/utente" data-bs-toggle="collapse" data-bs-target="#impostazioni" aria-expanded="false" aria-controls="impostazioni" (click)="isCollapse=false">
+            <my-user></my-user>
+        </div>
+
+
+       
+            <my-carrello></my-carrello>
+       
+
+    
+        
+
+        <div data-bs-toggle="collapse" data-bs-target="#impostazioni" aria-expanded="false" aria-controls="impostazioni" (click)="isCollapse=!isCollapse">
+            <div class="pnx-msg-icon">
+                <i class="bi bi-border-width"></i>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div class="collapse" id="impostazioni" #impostazioni>
+   
+        <my-footer *ngIf="isCollapse" data-bs-toggle="collapse" data-bs-target="#impostazioni" aria-expanded="false" aria-controls="impostazioni" (click)="isCollapse=false"></my-footer>
+        <my-footer  *ngIf="!isCollapse"></my-footer>
+
+
+      </div>
+
+</div>

@@ -6,9 +6,9 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CardeComponent } from './testt/carde/carde.component';
 import { ShowcaseComponent } from './testt/showcase/showcase.component';
-import { MyHeaderComponent } from './componenti/my-header/my-header.component';
-import { MyFooterComponent } from './componenti/my-footer/my-footer.component';
-import { MyBackToTopComponent } from './componenti/my-back-to-top/my-back-to-top.component';
+import { MyHeaderComponent } from './componenti/sezioni/my-header/my-header.component';
+import { MyFooterComponent } from './componenti/sezioni/my-footer/my-footer.component';
+import { MyBackToTopComponent } from './componenti/oggetti/my-back-to-top/my-back-to-top.component';
 import { HomeComponent } from './pagine/home/home.component';
 import { ProdottiComponent } from './pagine/prodotti/prodotti.component';
 import { CaroselloComponent } from './componenti/carosello/carosello.component';
@@ -16,9 +16,18 @@ import { PresentazioneComponent } from './componenti/presentazione/presentazione
 import { CaratteristicaComponent } from './componenti/caratteristica/caratteristica.component';
 import { VenditeComponent } from './componenti/vendite/vendite.component';
 import { InteressiComponent } from './componenti/interessi/interessi.component';
-import { MyNavSearchComponent } from './componenti/my-nav-search/my-nav-search.component';
-import { MyHeaderSearchComponent } from './componenti/my-header-search/my-header-search.component';
-import { MyMenuLateraleComponent } from './componenti/my-menu-laterale/my-menu-laterale.component';
+import { MyMenuLateraleComponent } from './componenti/sezioni/my-menu-laterale/my-menu-laterale.component';
+import { FormsModule } from '@angular/forms';
+import { ProdottoComponent } from './componenti/prodotto/prodotto.component';
+import { ModalDettaglioComponent } from './componenti/modali/modal-dettaglio/modal-dettaglio.component';
+import { ModalCarrelloComponent } from './componenti/modali/modal-carrello/modal-carrello.component';
+import { MyFooterNavComponent } from './componenti/sezioni/my-footer-nav/my-footer-nav.component';
+import { ClienteService } from './servizi/cliente.service';
+import { HttpClientModule } from '@angular/common/http';
+import { CarrelloService } from './servizi/carrello.service';
+import { MyCarrelloComponent } from './componenti/oggetti/my-carrello/my-carrello.component';
+import { MyUserComponent } from './componenti/oggetti/my-user/my-user.component';
+import { UtenteComponent } from './pagine/utente/utente.component';
 
 @NgModule({
   declarations: [
@@ -35,17 +44,27 @@ import { MyMenuLateraleComponent } from './componenti/my-menu-laterale/my-menu-l
     CaratteristicaComponent,
     VenditeComponent,
     InteressiComponent,
-    MyNavSearchComponent,
-    MyHeaderSearchComponent,
-    MyMenuLateraleComponent
+    MyMenuLateraleComponent,
+    ProdottoComponent,
+    ModalDettaglioComponent,
+    ModalCarrelloComponent,
+    MyFooterNavComponent,
+    MyCarrelloComponent,
+    MyUserComponent,
+    UtenteComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgwWowModule
+    NgwWowModule,
+    FormsModule,
+    HttpClientModule 
   ],
-  providers: [],
+  providers: [
+    ClienteService,
+    CarrelloService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

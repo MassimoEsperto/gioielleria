@@ -1,0 +1,72 @@
+<!-- Navbar Start -->
+<div class="container-fluid fixed-top px-0 wow fadeIn"
+    [ngClass]="{'top-45': posizione === 1,'bg-corallo shadow': posizione === 2,'nascosto': posizione === 3 }"
+    data-wow-delay="0.1s">
+    <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
+        <div class="col-lg-6 px-5 text-start">
+            <small><i class="bi bi-geo-alt-fill me-2"></i>123 Street, New York, USA</small>
+            <small class="ms-4"><i class="bi bi-envelope-at-fill me-2"></i>info@example.com</small>
+        </div>
+        <div class="col-lg-6 px-5 text-end">
+            <small>Follow us:</small>
+            <a class="text-body ms-3" href=""><i class="bi bi-facebook"></i></a>
+            <a class="text-body ms-3" href=""><i class="bi bi-twitter"></i></a>
+            <a class="text-body ms-3" href=""><i class="bi bi-whatsapp"></i></a>
+            <a class="text-body ms-3" href=""><i class="bi bi-instagram"></i></a>
+        </div>
+    </div>
+
+
+    <div class="pt-8 pr-16 pl-8">
+
+        <div class="d-flex flex-wrap">
+
+            <div class="flex-normal col-6 col-sm-6 col-md-6 col-lg-2">
+                <div>
+                    <my-menu-laterale></my-menu-laterale>
+                </div>
+
+                <div class="cursore" routerLink="/home">
+                    <img class="img-fluid" style="width: 120px;" src="assets/img/logo.png" alt="logo" class="logo">
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-1 order-lg-last d-flex justify-content-end">
+
+                <div class="pr-8" routerLink="/utente">
+                    <my-user [posizione]="posizione"></my-user>
+                </div>
+
+                <my-carrello [posizione]="posizione"></my-carrello>
+
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-9">
+
+                <div class="input-group pt-8 pb-8">
+                    <input id="ricerca-prodotti" type="search" list="datalistOptions" class="form-control"
+                        placeholder="search" aria-label="search" aria-describedby="addon-wrapping"
+                        [(ngModel)]="product">
+
+                    <span class="input-group-text cursore" id="addon-wrapping" (click)="searchProduct()"><i
+                            class="bi bi-search"></i></span>
+                    <datalist id="datalistOptions">
+                        <option value="Orologio meccanico">
+                        <option value="Cornetto della fortuna">
+                        <option value="Anello artigianale">
+                        <option value="Collana Elegance">
+                        <option value="Dente di leone">
+                    </datalist>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+</div>
+<!-- Navbar End -->
+
+<my-back-to-top *ngIf="posizione!=0"></my-back-to-top>

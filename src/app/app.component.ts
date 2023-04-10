@@ -6,7 +6,8 @@ import { NgwWowService } from 'ngx-wow';
   template: ` <!--<my-header></my-header>-->
  <my-header></my-header>
   <router-outlet></router-outlet>
-  <my-footer></my-footer>`
+  <my-footer-nav></my-footer-nav>
+  <modal-carrello></modal-carrello>`
 
 })
 

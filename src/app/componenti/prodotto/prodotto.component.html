@@ -1,0 +1,31 @@
+<div *ngIf="prodotto">
+    <div class="product-item pa-8">
+        <div class="position-relative overflow-hidden text-center">
+            <img class="img-contain" src="assets/img/{{prodotto.img}}" alt="">
+            <div *ngIf="prodotto.vetrina" class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">{{prodotto.vetrina}}</div>
+        </div>
+        <div class="text-center">
+            <div class="my-display-center">
+                <a class="h2">{{prodotto.titolo}}</a>
+            </div>
+
+            <div class="my-display-center">
+                <p>{{prodotto.anticipazione}}</p>
+            </div>
+            
+           
+            <span class="text-primary">{{prodotto.prezzo}} € </span>
+            <span *ngIf="prodotto.saldo" class="text-body text-decoration-line-through">{{prodotto.saldo}} €</span>
+        </div>
+        <div class="d-flex border-top">
+            <small class="w-50 text-center border-end py-2">
+                <a class="text-body cursore"  data-bs-toggle="modal"
+                data-bs-target="#modalDettaglio" (click)="vediDettaglio()"><i class="fa fa-eye text-primary me-2"></i>Vedi dettagli</a>
+            </small>
+            <small class="w-50 text-center py-2">
+                <a class="text-body cursore" (click)="addProduct(prodotto)"><i class="fa fa-shopping-bag text-primary me-2"></i>Aggiungi al
+                    carrello</a>
+            </small>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="impostazioni">
+    <!-- Footer Elements -->
+    <div class="container">
+
+        <div class="pt-16 pb-8">
+            <div class="my-flex-around">
+                <div class="colonna">
+                    <strong>Contatti</strong>
+                    <br>
+                    <span class="cursore pb-8" >info@example.com</span>
+                    <span class="cursore pb-8" >3696598548</span>
+                    <span class="cursore pb-8" >123 Street, New York, USA</span>
+                    <span *ngIf="isAdmin" class="cursore pb-8" routerLink="/administration">ADMIN</span>
+                </div>
+                <div class="colonna">
+                    <strong>Social</strong>
+                    <br>
+                    <span class="cursore pb-8" >Facebook</span>
+                    <span class="cursore pb-8" >Linkedin</span>
+                    <span *ngIf="isAdmin" class="cursore pb-8" routerLink="/administration">ADMIN</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Elements -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2022 Copyright: Gioielleria </div>
+    <!-- Copyright -->
+</div>
