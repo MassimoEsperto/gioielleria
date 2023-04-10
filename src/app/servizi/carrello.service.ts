@@ -9,13 +9,20 @@ export class CarrelloService {
 
   carrello: string = "CRL83PAY-LS";
   quantita = new BehaviorSubject(this.qntProdotti);
+  selezionati = new BehaviorSubject(this.getSelezionati);
 
   constructor() { }
+
+  get getSelezionati() {
+    return JSON.parse(this.getData(this.carrello))||[]
+  }
+
 
   setProdotto(prd: Prodotto) {
     let know_how = JSON.parse(this.getData(this.carrello))||[]
     know_how.push(prd)
     this.quantita.next(know_how.length);
+    this.selezionati.next(know_how);
     console.log("setProdotto: ",know_how)
     this.saveData(this.carrello, JSON.stringify(know_how))
   }

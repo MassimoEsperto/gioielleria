@@ -9,11 +9,13 @@ import { CarrelloService } from 'src/app/servizi/carrello.service';
 })
 export class ModalCarrelloComponent implements OnInit {
 
+
   constructor(private carrelloService: CarrelloService) { }
 
-  @Input() crlq:any = []
   ngOnInit(){
-    this.prodottiCarrello()
+    this.carrelloService.selezionati.subscribe((val: any) => {
+      console.log("selezionati:",val)
+    })
   }
 
   ngOnChanges() {
