@@ -28,6 +28,7 @@ import { CarrelloService } from './servizi/carrello.service';
 import { MyCarrelloComponent } from './componenti/oggetti/my-carrello/my-carrello.component';
 import { MyUserComponent } from './componenti/oggetti/my-user/my-user.component';
 import { UtenteComponent } from './pagine/utente/utente.component';
+import { MyQuantitaComponent } from './componenti/oggetti/my-quantita/my-quantita.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { UtenteComponent } from './pagine/utente/utente.component';
     MyFooterNavComponent,
     MyCarrelloComponent,
     MyUserComponent,
-    UtenteComponent
+    UtenteComponent,
+    MyQuantitaComponent
   ],
   imports: [
     BrowserModule,

@@ -134,7 +134,7 @@ export class ClienteService {
 
     prodotti.push(
       new Prodotto(
-        1, 1, "RollsTimi2",
+        9, 1, "RollsTimi2",
         "Pagani Design 2022 Orologio meccanico Orologio automatico di lusso da uomo Resistente all'acqua 100 Lancette NH35A Acciaio inossidabile rivestito Vetro zaffiro Orologio meccanico da 40 mm 1733"
         , "product-1.png",
         "New",
@@ -146,7 +146,7 @@ export class ClienteService {
 
     prodotti.push(
       new Prodotto(
-        1, 1, "Cornetto2",
+        10, 1, "Cornetto2",
         "Cornetto della fortuna Pireta, Ciondolo portafortuna in vetro di Murano, Cordino con nodo regolabile, ipoallergenico, Fatto a mano, Festa della mamma, Made in Italy, Regalo portafortuna."
         , "product-2.jpg",
         "Il piu venduto",
@@ -156,7 +156,7 @@ export class ClienteService {
 
     prodotti.push(
       new Prodotto(
-        1, 1, "Anello brutto2",
+        11, 1, "Anello brutto2",
         "Anello artigianale,in alluminio anodizzato,pezzo unico!Modello Nodo Lunare Argento Opaco."
         , "product-3.jpg",
         "Il piu venduto",
@@ -166,7 +166,7 @@ export class ClienteService {
 
     prodotti.push(
       new Prodotto(
-        1, 1, "Collana Elegante2",
+        12, 1, "Collana Elegante2",
         "Collana Elegance con Semi di Soffione - Esprimi un desiderio. Soffione Gioielli  Dente di leone Tarassaco. Artigianale. Realizzato a mano. Maglie fini acciaio inox anallergico."
         , "product-4.jpg",
         "New",
@@ -176,7 +176,7 @@ export class ClienteService {
 
     prodotti.push(
       new Prodotto(
-        1, 5, "Dente di leone2",
+        13, 5, "Dente di leone2",
         "Dente di leone Esprimi un desiderio Vero Fiori Pendente Catena in Argento Sterling 925 Collane."
         , "product-5.jpg",
         "New",
@@ -186,7 +186,7 @@ export class ClienteService {
 
     prodotti.push(
       new Prodotto(
-        1, 5, "Cono2",
+        14, 5, "Cono2",
         "CONO Medio di legno 5 x 10 cm PER SPIRALI di Energia - Erim Ighina."
         , "product-6.jpg",
         "New",
@@ -196,7 +196,7 @@ export class ClienteService {
 
     prodotti.push(
       new Prodotto(
-        1, 5, "Cavigliera2",
+        15, 5, "Cavigliera2",
         "Made by Nami Cavigliera Surfer Uomo e Donna - Cavigliera Sottile Boho Hippie Etnico - Accessori Fatti a Mano per Festa in Spiaggia - Impermeabile e Regolabile (turchese & multi profondo) (Set di 2)."
         , "product-7.jpg",
         "New",

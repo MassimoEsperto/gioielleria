@@ -6,8 +6,9 @@ export class Prodotto {
     anticipazione: string;
     titolo: string;
     vetrina: string;
-    prezzo:string;
-    saldo:string;
+    prezzo: string;
+    saldo: string;
+    quantita: number = 1;
 
     constructor(
         id: number,
@@ -16,8 +17,8 @@ export class Prodotto {
         descrizione: string,
         img: string,
         vetrina: string,
-        prezzo:string,
-    saldo:string
+        prezzo: string,
+        saldo: string
     ) {
         this.id = id;
         this.categoria = categoria;

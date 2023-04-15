@@ -1,0 +1,7 @@
+<div *ngIf="prodotto" class="text-center pt-8 pb-16">
+    <div class="btn-group btn-group-sm" role="group" aria-label="Quantita">
+        <button type="button" class="btn btn-primary" (click)="delProdotto(prodotto.id)"><i class="bi bi-dash"></i></button>
+        <span style="width: 32px;text-align: center;padding-top: 4px;">{{prodotto.quantita}}</span>
+        <button type="button" class="btn btn-primary" (click)="addProdotto(prodotto)"><i class="bi bi-plus"></i></button>
+      </div>
+</div>
