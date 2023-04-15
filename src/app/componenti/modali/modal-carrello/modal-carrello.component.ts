@@ -10,17 +10,18 @@ import { CarrelloService } from 'src/app/servizi/carrello.service';
 export class ModalCarrelloComponent implements OnInit {
 
   selezionati:Prodotto[]=[]
+  quantita:number=0
   constructor(private carrelloService: CarrelloService) { }
 
   ngOnInit(){
     this.carrelloService.selezionati.subscribe((val: any) => {
       this.selezionati= val
     })
+    this.carrelloService.quantita.subscribe((val: any) => {
+      this.quantita= val
+    })
   }
 
-  delProdotto(idp:number){
-    this.carrelloService.delProdotto(idp)
-  }
 
   clearCarrello(){
     this.carrelloService.clearCarrello()
