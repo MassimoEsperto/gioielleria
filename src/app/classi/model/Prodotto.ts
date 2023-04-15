@@ -9,6 +9,7 @@ export class Prodotto {
     prezzo: string;
     saldo: string;
     quantita: number = 1;
+    flag: boolean = true;
 
     constructor(
         id: number,

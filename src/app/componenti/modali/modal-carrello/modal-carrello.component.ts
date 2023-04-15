@@ -9,32 +9,42 @@ import { CarrelloService } from 'src/app/servizi/carrello.service';
 })
 export class ModalCarrelloComponent implements OnInit {
 
-  selezionati:Prodotto[]=[]
-  quantita:number=0
+  selezionati: Prodotto[] = []
+  quantita: number = 0
+
   constructor(private carrelloService: CarrelloService) { }
 
-  ngOnInit(){
+  ngOnInit() {
     this.carrelloService.selezionati.subscribe((val: any) => {
-      this.selezionati= val
+      this.selezionati = val
     })
     this.carrelloService.quantita.subscribe((val: any) => {
-      this.quantita= val
+      this.quantita = val
     })
   }
 
 
-  clearCarrello(){
+  clearCarrello() {
     this.carrelloService.clearCarrello()
   }
 
-  acquista(){
-    console.log("selezionati:",this.selezionati)
+  acquista() {
+    console.log("selezionati:", this.selezionati)
   }
- 
+
   ngOnDestroy() {
 
     document.body.removeAttribute("style");
   }
 
-
+  getTotale() {
+    let soldi: number = 0;
+    for (let soldo of this.selezionati) {
+      if(soldo.flag){
+        soldi += Number(soldo.prezzo) * soldo.quantita
+      }
+      
+    }
+    return soldi
+  }
 }
