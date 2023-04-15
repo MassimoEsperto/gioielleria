@@ -29,6 +29,7 @@ import { MyCarrelloComponent } from './componenti/oggetti/my-carrello/my-carrell
 import { MyUserComponent } from './componenti/oggetti/my-user/my-user.component';
 import { UtenteComponent } from './pagine/utente/utente.component';
 import { MyQuantitaComponent } from './componenti/oggetti/my-quantita/my-quantita.component';
+import { MyToastSuccessComponent } from './componenti/oggetti/my-toast-success/my-toast-success.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { MyQuantitaComponent } from './componenti/oggetti/my-quantita/my-quantit
     MyCarrelloComponent,
     MyUserComponent,
     UtenteComponent,
-    MyQuantitaComponent
+    MyQuantitaComponent,
+    MyToastSuccessComponent
   ],
   imports: [
     BrowserModule,
