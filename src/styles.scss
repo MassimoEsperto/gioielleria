@@ -5,6 +5,13 @@
 
 /* custom */
 $corallo: #7b1b02;
+$griggetto:#EAEDED;
+
+.modal-fullscreen .modal-content {
+    background-color: $griggetto;
+}
+
+
 .bg-corallo{
     background-color: $corallo;
     color: white;
@@ -553,8 +560,9 @@ a {
   .modal-fullscreen .modal-header {
     //   background: #215eb7; 
        color:gainsboro;
-       box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+       box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
        border-bottom: 0px !important;
+       margin-bottom: 0.3rem;
    }
    
    .modal-fullscreen .modal-footer {

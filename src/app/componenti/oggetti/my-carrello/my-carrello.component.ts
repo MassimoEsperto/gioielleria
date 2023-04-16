@@ -16,6 +16,7 @@ export class MyCarrelloComponent implements OnInit {
 
     this.carrelloService.quantita.subscribe((val: any) => {
       this.qntcarrello = val
+      console.log("carrello: ",val)
     })
   }
 

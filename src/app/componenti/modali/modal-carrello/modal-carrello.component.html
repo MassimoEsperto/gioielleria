@@ -9,48 +9,70 @@
             <div class="modal-body pa-8">
                 <div *ngIf="quantita>0">
                     <h6 class="pt-16 pb-16">Lista Selezionata {{quantita}} prodotti</h6>
+                    <div class="schermata">
 
-                    <ol class="list-group overflow-hidden">
-                        <li *ngFor="let prodotto of selezionati" class="list-group-item">
-                            <div class="row">
-                                <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                        <div class="col-12 col-sm-12 col-md-7 col-lg-7 pb-8">
 
-                                    <div class="overflow-hidden text-center">
-                                        <img class="img-contain" src="assets/img/{{prodotto.img}}" alt="">
-                                    </div>
+                            <ol class="list-group overflow-hidden">
+                                <li *ngFor="let prodotto of selezionati" class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-4 col-sm-4 col-md-3 col-lg-2">
 
-                                    <my-quantita [prodotto]="prodotto"></my-quantita>
+                                            <div class="overflow-hidden text-center">
+                                                <img class="img-contain" src="assets/img/{{prodotto.img}}" alt="">
+                                            </div>
 
-                                </div>
-                                <div class="col-5 col-sm-5 col-md-6 col-lg-8">
-                                    <div class="fw-bold">{{prodotto.titolo}}</div>
-                                    {{prodotto.anticipazione}}
-                                </div>
-                                <div class="col-3 col-sm-3 col-md-3 col-lg-2">
-                                    <div>
-                                        <span class="text-primary">{{prodotto.prezzo}} € </span>
-                                    </div>
-                                    <div>
-                                        <div class="form-check form-switch pt-16">
-                                            <input class="form-check-input" type="checkbox" role="switch"
-                                                [checked]="prodotto.flag" (change)="prodotto.flag = !prodotto.flag">
+                                            <my-quantita [prodotto]="prodotto"></my-quantita>
+
+                                        </div>
+                                        <div class="col-5 col-sm-5 col-md-6 col-lg-8">
+                                            <div class="fw-bold">{{prodotto.titolo}}</div>
+                                            {{prodotto.anticipazione}}
+                                        </div>
+                                        <div class="col-3 col-sm-3 col-md-3 col-lg-2">
+                                            <div>
+                                                <span class="text-primary">{{prodotto.prezzo}} € </span>
+                                            </div>
+                                            <div>
+                                                <div class="form-check form-switch pt-16">
+                                                    <input class="form-check-input" type="checkbox" role="switch"
+                                                        [checked]="prodotto.flag"
+                                                        (change)="prodotto.flag = !prodotto.flag">
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </li>
+                                </li>
 
-                    </ol>
-
-                    <div class="pt-16 d-flex flex-row justify-content-around flex-wrap">
-                        <div class="d-grid gap-2 col-12 col-sm-12 col-md-6 col-lg-4 pb-8 ">
-                            <button type="button" class="btn btn-success" (click)="acquista()">Acquista</button>
+                            </ol>
                         </div>
-                        <div class="d-grid gap-2 col-12 col-sm-12 col-md-6 col-lg-4 pb-8 ">
-                            <button type="button" class="btn btn-danger" (click)="clearCarrello()">Svuota
-                                Carrello</button>
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                            <ol class="list-group overflow-hidden">
+                                <li class="list-group-item">
+                                    <div class="d-flex flex-row">
+                                        <div class="pr-8">
+                                            <i class="bi bi-check-circle-fill"></i>
+                                        </div>
+                                        <div>
+                                            <span>Spedizione GRATUITA disponibile per il tuo ordine Si applicano
+                                                restrizioni
+                                                Selezionare questa opzione al momento della conferma dell’ordine.</span>
+                                        </div>
+                                    </div>
+                                    <div class="pt-16">
+                                        <div class="fw-bold">Totale Provvisorio: ({{quantita}} articoli) {{getTotale()}}
+                                            € </div>
+                                        <div class="d-grid gap-2 pa-8 ">
+                                            <button type="button" class="btn btn-success"
+                                                (click)="acquista()">Acquista</button>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ol>
                         </div>
                     </div>
+
 
                 </div>
                 <div *ngIf="selezionati.length==0">
@@ -58,7 +80,8 @@
                 </div>
             </div>
             <div class="c-modal-footer">
-                <div class="fw-bold">Totale: {{getTotale()}} € </div>
+                <button type="button" class="btn btn-danger" (click)="clearCarrello()">Svuota
+                    Carrello</button>
                 <button type="button" #closeModal class="btn btn-secondary" data-bs-dismiss="modal">Torna alla
                     ricerca</button>
             </div>
