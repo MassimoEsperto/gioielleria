@@ -44,6 +44,13 @@ export class ClienteService {
 
   getProdottiMock(ricerca: any) {
     let prodotti: Array<Prodotto> = []
+    let imgs: Array<string> = []
+    imgs.push("product-1.png")
+    imgs.push("product-2.jpg")
+    imgs.push("product-3.jpg")
+    imgs.push("product-4.jpg")
+    imgs.push("product-5.jpg")
+    imgs.push("product-6.jpg")
 
     prodotti.push(
       new Prodotto(
@@ -51,7 +58,8 @@ export class ClienteService {
         "Pagani Design 2022 Orologio meccanico Orologio automatico di lusso da uomo Resistente all'acqua 100 Lancette NH35A Acciaio inossidabile rivestito Vetro zaffiro Orologio meccanico da 40 mm 1733"
         , "product-1.png",
         "New",
-        "19.00", "29.00"
+        "19.00", "29.00",
+        imgs
       )
     )
 
@@ -63,7 +71,8 @@ export class ClienteService {
         "Cornetto della fortuna Pireta, Ciondolo portafortuna in vetro di Murano, Cordino con nodo regolabile, ipoallergenico, Fatto a mano, Festa della mamma, Made in Italy, Regalo portafortuna."
         , "product-2.jpg",
         "Il piu venduto",
-        "39.00", "69.00"
+        "39.00", "69.00",
+        imgs
       )
     )
 
@@ -73,7 +82,8 @@ export class ClienteService {
         "Anello artigianale,in alluminio anodizzato,pezzo unico!Modello Nodo Lunare Argento Opaco."
         , "product-3.jpg",
         "Il piu venduto",
-        "39.00", "69.00"
+        "39.00", "69.00",
+        imgs
       )
     )
 
@@ -83,7 +93,8 @@ export class ClienteService {
         "Collana Elegance con Semi di Soffione - Esprimi un desiderio. Soffione Gioielli  Dente di leone Tarassaco. Artigianale. Realizzato a mano. Maglie fini acciaio inox anallergico."
         , "product-4.jpg",
         "New",
-        "69.00", ""
+        "69.00", "",
+        imgs
       )
     )
 
@@ -93,7 +104,8 @@ export class ClienteService {
         "Dente di leone Esprimi un desiderio Vero Fiori Pendente Catena in Argento Sterling 925 Collane."
         , "product-5.jpg",
         "New",
-        "69.00", ""
+        "69.00", "",
+        imgs
       )
     )
 
@@ -103,7 +115,8 @@ export class ClienteService {
         "CONO Medio di legno 5 x 10 cm PER SPIRALI di Energia - Erim Ighina."
         , "product-6.jpg",
         "New",
-        "19.00", ""
+        "19.00", "",
+        imgs
       )
     )
 
@@ -113,7 +126,8 @@ export class ClienteService {
         "Made by Nami Cavigliera Surfer Uomo e Donna - Cavigliera Sottile Boho Hippie Etnico - Accessori Fatti a Mano per Festa in Spiaggia - Impermeabile e Regolabile (turchese & multi profondo) (Set di 2)."
         , "product-7.jpg",
         "New",
-        "9.00", ""
+        "9.00", "",
+        imgs
       )
     )
 
@@ -124,7 +138,8 @@ export class ClienteService {
         "Orecchini Cuore Sacro - Orecchini donna - Orecchini pendenti - Orecchini votivi - Orecchini color oro (Perno piccolo (pallina))."
         , "product-8.jpg",
         "New",
-        "39.00", "69.00"
+        "39.00", "69.00",
+        imgs
       )
     )
 
@@ -138,7 +153,8 @@ export class ClienteService {
         "Pagani Design 2022 Orologio meccanico Orologio automatico di lusso da uomo Resistente all'acqua 100 Lancette NH35A Acciaio inossidabile rivestito Vetro zaffiro Orologio meccanico da 40 mm 1733"
         , "product-1.png",
         "New",
-        "19.00", "29.00"
+        "19.00", "29.00",
+        imgs
       )
     )
 
@@ -150,7 +166,8 @@ export class ClienteService {
         "Cornetto della fortuna Pireta, Ciondolo portafortuna in vetro di Murano, Cordino con nodo regolabile, ipoallergenico, Fatto a mano, Festa della mamma, Made in Italy, Regalo portafortuna."
         , "product-2.jpg",
         "Il piu venduto",
-        "39.00", "69.00"
+        "39.00", "69.00",
+        imgs
       )
     )
 
@@ -160,7 +177,8 @@ export class ClienteService {
         "Anello artigianale,in alluminio anodizzato,pezzo unico!Modello Nodo Lunare Argento Opaco."
         , "product-3.jpg",
         "Il piu venduto",
-        "39.00", "69.00"
+        "39.00", "69.00",
+        imgs
       )
     )
 
@@ -170,7 +188,8 @@ export class ClienteService {
         "Collana Elegance con Semi di Soffione - Esprimi un desiderio. Soffione Gioielli  Dente di leone Tarassaco. Artigianale. Realizzato a mano. Maglie fini acciaio inox anallergico."
         , "product-4.jpg",
         "New",
-        "69.00", ""
+        "69.00", "",
+        imgs
       )
     )
 
@@ -180,7 +199,8 @@ export class ClienteService {
         "Dente di leone Esprimi un desiderio Vero Fiori Pendente Catena in Argento Sterling 925 Collane."
         , "product-5.jpg",
         "New",
-        "69.00", ""
+        "69.00", "",
+        imgs
       )
     )
 
@@ -190,7 +210,8 @@ export class ClienteService {
         "CONO Medio di legno 5 x 10 cm PER SPIRALI di Energia - Erim Ighina."
         , "product-6.jpg",
         "New",
-        "19.00", ""
+        "19.00", "",
+        imgs
       )
     )
 
@@ -200,7 +221,8 @@ export class ClienteService {
         "Made by Nami Cavigliera Surfer Uomo e Donna - Cavigliera Sottile Boho Hippie Etnico - Accessori Fatti a Mano per Festa in Spiaggia - Impermeabile e Regolabile (turchese & multi profondo) (Set di 2)."
         , "product-7.jpg",
         "New",
-        "9.00", ""
+        "9.00", "",
+        imgs
       )
     )
 
@@ -211,7 +233,8 @@ export class ClienteService {
         "Orecchini Cuore Sacro - Orecchini donna - Orecchini pendenti - Orecchini votivi - Orecchini color oro (Perno piccolo (pallina))."
         , "product-8.jpg",
         "New",
-        "39.00", "69.00"
+        "39.00", "69.00",
+        imgs
       )
     )
 

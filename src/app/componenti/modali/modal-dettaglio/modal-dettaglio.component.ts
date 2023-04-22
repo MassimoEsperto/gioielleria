@@ -11,7 +11,12 @@ export class ModalDettaglioComponent implements OnInit {
   
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+  }
+
+  ngOnChanges() {
+    console.log("dettaglio",this.dettaglio)
+    console.log("dettaglio.imgs.length",this.dettaglio.imgs.length)
   }
 
   ngOnDestroy() {

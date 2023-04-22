@@ -11,11 +11,11 @@ import { MyFooterComponent } from './componenti/sezioni/my-footer/my-footer.comp
 import { MyBackToTopComponent } from './componenti/oggetti/my-back-to-top/my-back-to-top.component';
 import { HomeComponent } from './pagine/home/home.component';
 import { ProdottiComponent } from './pagine/prodotti/prodotti.component';
-import { CaroselloComponent } from './componenti/carosello/carosello.component';
-import { PresentazioneComponent } from './componenti/presentazione/presentazione.component';
-import { CaratteristicaComponent } from './componenti/caratteristica/caratteristica.component';
-import { VenditeComponent } from './componenti/vendite/vendite.component';
-import { InteressiComponent } from './componenti/interessi/interessi.component';
+import { CaroselloComponent } from './componenti/elementi/carosello/carosello.component';
+import { PresentazioneComponent } from './componenti/elementi/presentazione/presentazione.component';
+import { CaratteristicaComponent } from './componenti/elementi/caratteristica/caratteristica.component';
+import { VenditeComponent } from './componenti/elementi/vendite/vendite.component';
+import { InteressiComponent } from './componenti/elementi/interessi/interessi.component';
 import { MyMenuLateraleComponent } from './componenti/sezioni/my-menu-laterale/my-menu-laterale.component';
 import { FormsModule } from '@angular/forms';
 import { ProdottoComponent } from './componenti/prodotto/prodotto.component';

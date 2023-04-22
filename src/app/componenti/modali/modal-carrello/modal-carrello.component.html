@@ -4,7 +4,7 @@
     <div class="modal-dialog modal-fullscreen">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalCarrelloLabel">Carrello</h5>
+                <h5 id="modalCarrelloLabel" style="color: black;">Carrello</h5>
             </div>
             <div class="modal-body pa-8">
                 <div *ngIf="quantita>0">
@@ -47,29 +47,74 @@
                             </ol>
                         </div>
                         <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                            <ol class="list-group overflow-hidden">
-                                <li class="list-group-item">
-                                    <div class="d-flex flex-row">
-                                        <div class="pr-8">
-                                            <i class="bi bi-check-circle-fill"></i>
-                                        </div>
-                                        <div>
-                                            <span>Spedizione GRATUITA disponibile per il tuo ordine Si applicano
-                                                restrizioni
-                                                Selezionare questa opzione al momento della conferma dell’ordine.</span>
-                                        </div>
-                                    </div>
-                                    <div class="pt-16">
-                                        <div class="fw-bold">Totale Provvisorio: ({{quantita}} articoli) {{getTotale()}}
-                                            € </div>
-                                        <div class="d-grid gap-2 pa-8 ">
-                                            <button type="button" class="btn btn-success"
-                                                (click)="acquista()">Acquista</button>
-                                        </div>
-                                    </div>
-                                </li>
+                            <div class="d-flex flex-column align-items-end">
+                                <div>
+                                    <ol class="list-group overflow-hidden">
+                                        <li class="list-group-item">
+                                            <div class="d-flex flex-row">
+                                                <div class="pr-8">
+                                                    <i class="bi bi-check-circle-fill"></i>
+                                                </div>
+                                                <div>
+                                                    <span>Spedizione GRATUITA disponibile per il tuo ordine Si applicano
+                                                        restrizioni
+                                                        Selezionare questa opzione al momento della conferma
+                                                        dell’ordine.</span>
+                                                </div>
+                                            </div>
+                                            <div class="pt-16">
+                                                <div class="fw-bold">Totale Provvisorio: ({{quantita}} articoli)
+                                                    {{getTotale()}}
+                                                    € </div>
+                                                <div class="d-grid gap-2 pa-8 ">
+                                                    <button type="button" class="btn btn-success"
+                                                        (click)="acquista()">Acquista</button>
+                                                </div>
+                                            </div>
+                                        </li>
 
-                            </ol>
+                                    </ol>
+                                </div>
+
+                                <div>
+                                    <ol class="list-group overflow-hidden">
+
+
+                                        <li>
+                                            <div class="d-none d-md-block d-lg-block pt-16">
+                                                <ol class="list-group overflow-hidden">
+                                                    <li *ngFor="let prodotto of selezionati" class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-6 col-sm-6 col-md-4 col-lg-4">
+
+                                                                <div class="overflow-hidden text-center">
+                                                                    <img class="img-contain"
+                                                                        src="assets/img/{{prodotto.img}}" alt="">
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="col-6 col-sm-6 col-md-8 col-lg-8">
+                                                                <div class="fw-bold">{{prodotto.titolo}}</div>
+                                                                <div>
+                                                                    {{prodotto.anticipazione}}
+                                                                </div>
+                                                                <div>
+                                                                    <span class="text-primary">{{prodotto.prezzo}} €
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </li>
+
+                                                </ol>
+                                            </div>
+                                        </li>
+
+                                    </ol>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
