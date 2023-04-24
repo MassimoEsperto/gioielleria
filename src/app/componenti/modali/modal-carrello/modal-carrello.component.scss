@@ -30,6 +30,14 @@ img {
 .schermata{
     display: flex;
     align-items: start;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+}
+
+.a-alert-content {
+    margin-bottom: 0;
+    text-align: left;
+    font-size: 12px;
+    line-height: 15px;
+    color: #067D62;
 }

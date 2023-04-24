@@ -1,4 +1,4 @@
-<div *ngIf="prodotto" class="text-center pt-8 pb-16">
+<div *ngIf="prodotto" class="pt-8 pb-16">
     <div class="btn-group btn-group-sm" role="group" aria-label="Quantita">
         <button type="button" class="btn btn-primary" (click)="delProdotto(prodotto.id)">
           <i [ngClass]="{'bi bi-dash': prodotto.quantita > 1,'bi bi-trash': prodotto.quantita == 1}"></i>          

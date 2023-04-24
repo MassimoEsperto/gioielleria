@@ -5,116 +5,159 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 id="modalCarrelloLabel" style="color: black;">Carrello</h5>
+                <button type="button" #closeModal class="btn btn-secondary" data-bs-dismiss="modal">
+                    <i class="bi bi-reply-fill"></i> Torna alla ricerca</button>
             </div>
             <div class="modal-body pa-8">
                 <div *ngIf="quantita>0">
                     <h6 class="pt-16 pb-16">Lista Selezionata {{quantita}} prodotti</h6>
                     <div class="schermata">
 
-                        <div class="col-12 col-sm-12 col-md-7 col-lg-7 pb-8">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-7">
+                            <div class="pa-8 card-carrello">
+                                <ol class="list-group overflow-hidden">
+                                    <li *ngFor="let prodotto of selezionati" class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-4 col-sm-4 col-md-3 col-lg-2">
 
-                            <ol class="list-group overflow-hidden">
-                                <li *ngFor="let prodotto of selezionati" class="list-group-item">
-                                    <div class="row">
-                                        <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                                                <div class="overflow-hidden text-center">
+                                                    <img class="img-contain" src="assets/img/{{prodotto.img}}" alt="">
+                                                </div>
 
-                                            <div class="overflow-hidden text-center">
-                                                <img class="img-contain" src="assets/img/{{prodotto.img}}" alt="">
                                             </div>
+                                            <div class="col-5 col-sm-5 col-md-6 col-lg-8">
+                                                <div class="fw-bold">{{prodotto.titolo}}</div>
+                                                <div>{{prodotto.sintesi}}</div>
 
-                                            <my-quantita [prodotto]="prodotto"></my-quantita>
-
-                                        </div>
-                                        <div class="col-5 col-sm-5 col-md-6 col-lg-8">
-                                            <div class="fw-bold">{{prodotto.titolo}}</div>
-                                            {{prodotto.anticipazione}}
-                                        </div>
-                                        <div class="col-3 col-sm-3 col-md-3 col-lg-2">
-                                            <div>
-                                                <span class="text-primary">{{prodotto.prezzo}} € </span>
-                                            </div>
-                                            <div>
-                                                <div class="form-check form-switch pt-16">
-                                                    <input class="form-check-input" type="checkbox" role="switch"
-                                                        [checked]="prodotto.flag"
-                                                        (change)="prodotto.flag = !prodotto.flag">
+                                                <div>
+                                                    <div class="a-alert-content">
+                                                        <p>
+                                                            <span class="a-color-secondary">
+                                                                Disponibilità immediata
+                                                            </span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="pt-8">
+                                                    <my-quantita [prodotto]="prodotto"></my-quantita>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </li>
-
-                            </ol>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                            <div class="d-flex flex-column align-items-end">
-                                <div>
-                                    <ol class="list-group overflow-hidden">
-                                        <li class="list-group-item">
-                                            <div class="d-flex flex-row">
-                                                <div class="pr-8">
-                                                    <i class="bi bi-check-circle-fill"></i>
+                                            <div class="col-3 col-sm-3 col-md-3 col-lg-2">
+                                                <div class="d-none d-md-block">
+                                                    <h5 class="text-primary">{{prodotto.prezzo}} € </h5>
+                                                </div>
+                                                <div class="d-block d-md-none">
+                                                    <h6 class="text-primary">{{prodotto.prezzo}} € </h6>
                                                 </div>
                                                 <div>
-                                                    <span>Spedizione GRATUITA disponibile per il tuo ordine Si applicano
-                                                        restrizioni
-                                                        Selezionare questa opzione al momento della conferma
-                                                        dell’ordine.</span>
+                                                    <div class="form-check form-switch pt-16">
+                                                        <input class="form-check-input" type="checkbox" role="switch"
+                                                            [checked]="prodotto.flag"
+                                                            (change)="prodotto.flag = !prodotto.flag">
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="pt-16">
-                                                <div class="fw-bold">Totale Provvisorio: ({{quantita}} articoli)
-                                                    {{getTotale()}}
-                                                    € </div>
+                                        </div>
+                                    </li>
+
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-3">
+                            <div class="pa-8 card-acquista">
+
+
+                                <div class="d-flex flex-column align-items-end">
+                                    <div>
+                                        <ol class="list-group overflow-hidden">
+                                            <li class="list-group-item">
+                                                <div class="d-flex flex-row a-alert-content">
+                                                    <div class="pr-8">
+                                                        <i class="bi bi-check-circle-fill"></i>
+                                                    </div>
+                                                    <div>
+                                                        <span>
+                                                            <b>Spedizione GRATUITA</b> disponibile per il tuo ordine
+                                                            <a href="">Si applicano restrizioni</a>
+                                                        </span>
+                                                        <p>
+                                                            <span class="a-color-secondary">
+                                                                Selezionare questa opzione al momento della conferma
+                                                                dell’ordine.
+                                                            </span>
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                                <div class="pt-16">
+                                                    <div>
+                                                        <h5 class="fw-bold">Totale Provvisorio: ({{getQuantita()}}
+                                                            articoli)
+                                                            {{getTotale()}}
+                                                            € </h5>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            Questo ordine contiene un regalo
+                                                        </label>
+                                                    </div>
+                                                    <div class="d-grid gap-2 pa-8 ">
+                                                        <button type="button" class="btn btn-success"
+                                                            (click)="acquista()">Acquista</button>
+                                                    </div>
+                                                </div>
                                                 <div class="d-grid gap-2 pa-8 ">
-                                                    <button type="button" class="btn btn-success"
-                                                        (click)="acquista()">Acquista</button>
+                                                    <button type="button" class="btn btn-danger"
+                                                        (click)="clearCarrello()">Svuota
+                                                        Carrello</button>
                                                 </div>
-                                            </div>
-                                        </li>
+                                            </li>
 
-                                    </ol>
-                                </div>
+                                        </ol>
+                                    </div>
 
-                                <div>
-                                    <ol class="list-group overflow-hidden">
+                                    <div class="card-suggerimenti pt-16">
+                                        <ol class="list-group overflow-hidden">
 
 
-                                        <li>
-                                            <div class="d-none d-md-block d-lg-block pt-16">
-                                                <ol class="list-group overflow-hidden">
-                                                    <li *ngFor="let prodotto of selezionati" class="list-group-item">
-                                                        <div class="row">
-                                                            <div class="col-6 col-sm-6 col-md-4 col-lg-4">
+                                            <li>
+                                                <div class="d-none d-md-block d-lg-block pt-16">
+                                                    <ol class="list-group overflow-hidden">
+                                                        <li *ngFor="let prodotto of selezionati"
+                                                            class="list-group-item">
+                                                            <div class="row">
+                                                                <div class="col-6 col-sm-6 col-md-4 col-lg-4">
 
-                                                                <div class="overflow-hidden text-center">
-                                                                    <img class="img-contain"
-                                                                        src="assets/img/{{prodotto.img}}" alt="">
+                                                                    <div class="overflow-hidden text-center">
+                                                                        <img class="img-contain"
+                                                                            src="assets/img/{{prodotto.img}}" alt="">
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="col-6 col-sm-6 col-md-8 col-lg-8">
+                                                                    <div class="fw-bold">{{prodotto.titolo}}</div>
+                                                                    <div>
+                                                                        {{prodotto.anticipazione}}
+                                                                    </div>
+                                                                    <div>
+                                                                        <span class="text-primary">{{prodotto.prezzo}} €
+                                                                        </span>
+                                                                    </div>
                                                                 </div>
 
                                                             </div>
-                                                            <div class="col-6 col-sm-6 col-md-8 col-lg-8">
-                                                                <div class="fw-bold">{{prodotto.titolo}}</div>
-                                                                <div>
-                                                                    {{prodotto.anticipazione}}
-                                                                </div>
-                                                                <div>
-                                                                    <span class="text-primary">{{prodotto.prezzo}} €
-                                                                    </span>
-                                                                </div>
-                                                            </div>
+                                                        </li>
 
-                                                        </div>
-                                                    </li>
+                                                    </ol>
+                                                </div>
+                                            </li>
 
-                                                </ol>
-                                            </div>
-                                        </li>
-
-                                    </ol>
+                                        </ol>
+                                    </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
 
@@ -124,12 +167,7 @@
                     <h6 class="pt-16 pb-16">Nessun elemento selezionato</h6>
                 </div>
             </div>
-            <div class="c-modal-footer">
-                <button type="button" class="btn btn-danger" (click)="clearCarrello()">Svuota
-                    Carrello</button>
-                <button type="button" #closeModal class="btn btn-secondary" data-bs-dismiss="modal">Torna alla
-                    ricerca</button>
-            </div>
+           
         </div>
     </div>
 </div>

@@ -59,7 +59,8 @@ export class ClienteService {
         , "product-1.png",
         "New",
         "19.00", "29.00",
-        imgs
+        imgs,
+        "Orologio Meccanico Interessante"
       )
     )
 
@@ -72,7 +73,8 @@ export class ClienteService {
         , "product-2.jpg",
         "Il piu venduto",
         "39.00", "69.00",
-        imgs
+        imgs,
+        "Cornetto port fortuna fortunato"
       )
     )
 
@@ -83,7 +85,8 @@ export class ClienteService {
         , "product-3.jpg",
         "Il piu venduto",
         "39.00", "69.00",
-        imgs
+        imgs,
+        "Anello affascinante raffinato per uomo"
       )
     )
 
@@ -94,7 +97,8 @@ export class ClienteService {
         , "product-4.jpg",
         "New",
         "69.00", "",
-        imgs
+        imgs,
+        "Collana affascinante raffinato per donna"
       )
     )
 
@@ -105,7 +109,8 @@ export class ClienteService {
         , "product-5.jpg",
         "New",
         "69.00", "",
-        imgs
+        imgs,
+        "Il dente re della giungla"
       )
     )
 
@@ -116,7 +121,8 @@ export class ClienteService {
         , "product-6.jpg",
         "New",
         "19.00", "",
-        imgs
+        imgs,
+        "Cono, geometricamente perfetto "
       )
     )
 
@@ -127,7 +133,8 @@ export class ClienteService {
         , "product-7.jpg",
         "New",
         "9.00", "",
-        imgs
+        imgs,
+        "Cavigliera per donna gamba destra"
       )
     )
 
@@ -139,7 +146,8 @@ export class ClienteService {
         , "product-8.jpg",
         "New",
         "39.00", "69.00",
-        imgs
+        imgs,
+        "Orecchini raffinati per donna"
       )
     )
 
@@ -154,7 +162,8 @@ export class ClienteService {
         , "product-1.png",
         "New",
         "19.00", "29.00",
-        imgs
+        imgs,
+        "Orologio Meccanico Interessante"
       )
     )
 
@@ -167,7 +176,8 @@ export class ClienteService {
         , "product-2.jpg",
         "Il piu venduto",
         "39.00", "69.00",
-        imgs
+        imgs,
+        "Cornetto port fortuna fortunato"
       )
     )
 
@@ -178,7 +188,8 @@ export class ClienteService {
         , "product-3.jpg",
         "Il piu venduto",
         "39.00", "69.00",
-        imgs
+        imgs,
+        "Anello affascinante raffinato per uomo"
       )
     )
 
@@ -189,7 +200,8 @@ export class ClienteService {
         , "product-4.jpg",
         "New",
         "69.00", "",
-        imgs
+        imgs,
+        "Collana affascinante raffinato per donna"
       )
     )
 
@@ -200,7 +212,8 @@ export class ClienteService {
         , "product-5.jpg",
         "New",
         "69.00", "",
-        imgs
+        imgs,
+        "Il dente del re della giungla"
       )
     )
 
@@ -211,7 +224,8 @@ export class ClienteService {
         , "product-6.jpg",
         "New",
         "19.00", "",
-        imgs
+        imgs,
+        "Cono, geometricamente perfetto "
       )
     )
 
@@ -222,7 +236,8 @@ export class ClienteService {
         , "product-7.jpg",
         "New",
         "9.00", "",
-        imgs
+        imgs,
+        "Cavigliera per donna gamba destra"
       )
     )
 
@@ -234,7 +249,8 @@ export class ClienteService {
         , "product-8.jpg",
         "New",
         "39.00", "69.00",
-        imgs
+        imgs,
+        "Orecchini raffinati per donna"
       )
     )
 

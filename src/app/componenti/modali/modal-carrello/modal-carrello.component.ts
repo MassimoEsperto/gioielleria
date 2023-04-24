@@ -47,4 +47,15 @@ export class ModalCarrelloComponent implements OnInit {
     }
     return soldi
   }
+
+  getQuantita() {
+    let somma: number = 0;
+    for (let elemento of this.selezionati) {
+      if(elemento.flag){
+        somma += 1 * elemento.quantita
+      }
+      
+    }
+    return somma
+  }
 }
