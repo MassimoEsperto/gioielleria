@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ModalDettaglioComponent implements OnInit {
 
   @Input() dettaglio!: any;
+  copertina:string="";
   
   constructor() { }
 
@@ -15,8 +16,7 @@ export class ModalDettaglioComponent implements OnInit {
   }
 
   ngOnChanges() {
-    console.log("dettaglio",this.dettaglio)
-    console.log("dettaglio.imgs.length",this.dettaglio.imgs.length)
+    this.copertina=this.dettaglio.img
   }
 
   ngOnDestroy() {
@@ -24,4 +24,6 @@ export class ModalDettaglioComponent implements OnInit {
     document.body.removeAttribute("style");
 
   }
+
+ 
 }
