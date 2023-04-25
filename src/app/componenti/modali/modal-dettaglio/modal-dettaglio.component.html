@@ -10,10 +10,14 @@
       </div>
       <div class="modal-body pa-0">
 
-        <div class="d-none d-md-block d-lg-block">
+        <div class="d-none d-md-block d-lg-block dettaglio-lg">
 
-          <div class="row">
+          <div class="row ma-0">
             <div class="col">
+              <div class="pt-16">
+                <h5>{{dettaglio.sintesi}}</h5>
+              </div>
+
               <div class="d-flex">
                 <div>
                   <div *ngFor="let img of dettaglio.imgs">
@@ -36,26 +40,56 @@
 
 
             <div class="col">
-              dettaglio
+              <div class="pt-16">
+                <h5>Informazioni su questo articolo</h5>
+              </div>
+              <div>
+                <table class="table">
+                  <thead>
+                    <tr>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                    <tr>
+                      <td class="table-info">Prezzo</td>
+                      <td>{{dettaglio.prezzo}} €</td>
+                    </tr>
+                    <tr *ngFor="let info of dettaglio.info">
+                      <td class="table-info">{{info.chiave}}</td>
+                      <td>{{info.valore}}</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+              <div class="d-grid gap-2 pa-8 ">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal"
+                    (click)="setProdotto()">Aggiungi a carrello</button>
+            </div>
             </div>
           </div>
 
         </div>
-        <div class="d-block d-md-none d-lg-none d-xl-none d-xxl-none pb-80">
-
-          <div *ngIf="dettaglio.imgs.length>0" id="carouselExampleIndicators" class="carousel carousel-dark slide"
-            data-bs-ride="true" style="background-color: white;">
+        <div class="d-block d-md-none d-lg-none d-xl-none d-xxl-none dettaglio-sm">
+          <div class="pa-8">
+          <div class="pt-8">
+            <h6>{{dettaglio.sintesi}}</h6>
+          </div>
+          <div id="carouselDettaglioProdotto" class="carousel carousel-dark slide"
+            data-bs-ride="carousel" style="background-color: white;">
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              <button type="button" data-bs-target="#carouselDettaglioProdotto" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
               <button *ngFor="let view of dettaglio.imgs;let i = index" type="button"
-                data-bs-target="#carouselExampleIndicators" [attr.data-bs-slide-to]="i+1" aria-label="Slide 2"></button>
+                data-bs-target="#carouselDettaglioProdotto" [attr.data-bs-slide-to]="i+1" aria-label="Slide 2"></button>
             </div>
             <div class="carousel-inner">
-              <div class="carousel-item active">
+              <div class="carousel-item active pb-32">
                 <img src="assets/img/{{dettaglio.img}}" class="img-contain img-large">
               </div>
-              <div *ngFor="let view of dettaglio.imgs" class="carousel-item">
+              <div *ngFor="let view of dettaglio.imgs" class="carousel-item pb-32">
 
                 <img src="assets/img/{{view}}" class="img-contain img-large">
               </div>
@@ -63,12 +97,38 @@
             </div>
 
           </div>
+          <div class="pt-16">
+            <table class="table">
+              <thead>
+                <tr>
 
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr>
+                  <td class="table-info">Prezzo</td>
+                  <td>{{dettaglio.prezzo}} €</td>
+                </tr>
+                <tr *ngFor="let info of dettaglio.info">
+                  <td class="table-info">{{info.chiave}}</td>
+                  <td>{{info.valore}}</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+          <div class="d-grid gap-2 pa-8 ">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal"
+                (click)="setProdotto()">Aggiungi a carrello</button>
         </div>
+
+      </div>
+    </div>
 
 
       </div>
-      
+
     </div>
   </div>
 </div>

@@ -69,7 +69,7 @@ export class ProdottiComponent implements OnInit {
 
   ngOnInit() {
 
-    this.dettaglio = new Prodotto(1, 1, "", "", "", "", "", "",[],"")
+    this.dettaglio = new Prodotto(1, 1, "", "", "", "", "", "",[],"",[])
 
     this.route.params
       .subscribe((params: Params) =>

@@ -44,6 +44,8 @@ export class ClienteService {
 
   getProdottiMock(ricerca: any) {
     let prodotti: Array<Prodotto> = []
+    let informazioni: Array<any> = []
+    //imgs
     let imgs: Array<string> = []
     imgs.push("product-1.png")
     imgs.push("product-2.jpg")
@@ -51,6 +53,17 @@ export class ClienteService {
     imgs.push("product-4.jpg")
     imgs.push("product-5.jpg")
     imgs.push("product-6.jpg")
+
+    //info
+    informazioni.push({"chiave":"Dimensioni prodotto","valore":"8.5 x 9 x 15.4 cm"})
+    informazioni.push({"chiave":"Marchio","valore":"Pandora"})
+    informazioni.push({"chiave":"Numero modello articolo","valore":"MAC0001"})
+    informazioni.push({"chiave":"Assemblaggio necessario","valore":"no"})
+    informazioni.push({"chiave":"Tipi di materiale","valore":"oro"})
+    informazioni.push({"chiave":"Peso articolo","valore":"1 g"})
+    	
+
+
 
     prodotti.push(
       new Prodotto(
@@ -60,7 +73,8 @@ export class ClienteService {
         "New",
         "19.00", "29.00",
         imgs,
-        "Orologio Meccanico Interessante"
+        "Orologio Meccanico Interessante",
+        informazioni
       )
     )
 
@@ -74,7 +88,8 @@ export class ClienteService {
         "Il piu venduto",
         "39.00", "69.00",
         imgs,
-        "Cornetto port fortuna fortunato"
+        "Cornetto port fortuna fortunato",
+        informazioni
       )
     )
 
@@ -86,7 +101,8 @@ export class ClienteService {
         "Il piu venduto",
         "39.00", "69.00",
         imgs,
-        "Anello affascinante raffinato per uomo"
+        "Anello affascinante raffinato per uomo",
+        informazioni
       )
     )
 
@@ -98,7 +114,8 @@ export class ClienteService {
         "New",
         "69.00", "",
         imgs,
-        "Collana affascinante raffinato per donna"
+        "Collana affascinante raffinato per donna",
+        informazioni
       )
     )
 
@@ -110,7 +127,8 @@ export class ClienteService {
         "New",
         "69.00", "",
         imgs,
-        "Il dente re della giungla"
+        "Il dente re della giungla",
+        informazioni
       )
     )
 
@@ -122,7 +140,8 @@ export class ClienteService {
         "New",
         "19.00", "",
         imgs,
-        "Cono, geometricamente perfetto "
+        "Cono, geometricamente perfetto ",
+        informazioni
       )
     )
 
@@ -134,7 +153,8 @@ export class ClienteService {
         "New",
         "9.00", "",
         imgs,
-        "Cavigliera per donna gamba destra"
+        "Cavigliera per donna gamba destra",
+        informazioni
       )
     )
 
@@ -147,7 +167,8 @@ export class ClienteService {
         "New",
         "39.00", "69.00",
         imgs,
-        "Orecchini raffinati per donna"
+        "Orecchini raffinati per donna",
+        informazioni
       )
     )
 
@@ -163,7 +184,8 @@ export class ClienteService {
         "New",
         "19.00", "29.00",
         imgs,
-        "Orologio Meccanico Interessante"
+        "Orologio Meccanico Interessante",
+        informazioni
       )
     )
 
@@ -177,7 +199,8 @@ export class ClienteService {
         "Il piu venduto",
         "39.00", "69.00",
         imgs,
-        "Cornetto port fortuna fortunato"
+        "Cornetto port fortuna fortunato",
+        informazioni
       )
     )
 
@@ -189,7 +212,8 @@ export class ClienteService {
         "Il piu venduto",
         "39.00", "69.00",
         imgs,
-        "Anello affascinante raffinato per uomo"
+        "Anello affascinante raffinato per uomo",
+        informazioni
       )
     )
 
@@ -201,7 +225,8 @@ export class ClienteService {
         "New",
         "69.00", "",
         imgs,
-        "Collana affascinante raffinato per donna"
+        "Collana affascinante raffinato per donna",
+        informazioni
       )
     )
 
@@ -213,7 +238,8 @@ export class ClienteService {
         "New",
         "69.00", "",
         imgs,
-        "Il dente del re della giungla"
+        "Il dente del re della giungla",
+        informazioni
       )
     )
 
@@ -225,7 +251,8 @@ export class ClienteService {
         "New",
         "19.00", "",
         imgs,
-        "Cono, geometricamente perfetto "
+        "Cono, geometricamente perfetto ",
+        informazioni
       )
     )
 
@@ -237,7 +264,8 @@ export class ClienteService {
         "New",
         "9.00", "",
         imgs,
-        "Cavigliera per donna gamba destra"
+        "Cavigliera per donna gamba destra",
+        informazioni
       )
     )
 
@@ -250,7 +278,8 @@ export class ClienteService {
         "New",
         "39.00", "69.00",
         imgs,
-        "Orecchini raffinati per donna"
+        "Orecchini raffinati per donna",
+        informazioni
       )
     )
 

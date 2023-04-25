@@ -11,7 +11,8 @@ export class Prodotto {
     quantita: number = 1;
     flag: boolean = true;
     imgs: Array<string> = [];
-    sintesi:string;
+    sintesi: string;
+    info: Array<any> = []
 
     constructor(
         id: number,
@@ -23,7 +24,8 @@ export class Prodotto {
         prezzo: string,
         saldo: string,
         imgs: Array<string>,
-        sintesi:string
+        sintesi: string,
+        info: Array<any>,
     ) {
         this.id = id;
         this.categoria = categoria;
@@ -36,5 +38,6 @@ export class Prodotto {
         this.saldo = saldo;
         this.imgs = imgs;
         this.sintesi = sintesi;
+        this.info = info;
     }
 }
