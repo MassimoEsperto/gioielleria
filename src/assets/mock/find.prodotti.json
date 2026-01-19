@@ -1,0 +1,770 @@
+[
+    {
+        "quantita": 1,
+        "flag": true,
+        "imgs": [
+            "product-1.png",
+            "product-2.jpg",
+            "product-3.jpg",
+            "product-4.jpg",
+            "product-5.jpg",
+            "product-6.jpg"
+        ],
+        "info": [
+            {
+                "chiave": "Dimensioni prodotto",
+                "valore": "8.5 x 9 x 15.4 cm"
+            },
+            {
+                "chiave": "Marchio",
+                "valore": "Pandora"
+            },
+            {
+                "chiave": "Numero modello articolo",
+                "valore": "MAC0001"
+            },
+            {
+                "chiave": "Assemblaggio necessario",
+                "valore": "no"
+            },
+            {
+                "chiave": "Tipi di materiale",
+                "valore": "oro"
+            },
+            {
+                "chiave": "Peso articolo",
+                "valore": "1 g"
+            }
+        ],
+        "id": 1,
+        "categoria": 1,
+        "descrizione": "Pagani Design 2022 Orologio meccanico Orologio automatico di lusso da uomo Resistente all'acqua 100 Lancette NH35A Acciaio inossidabile rivestito Vetro zaffiro Orologio meccanico da 40 mm 1733",
+        "img": "product-1.png",
+        "anticipazione": "Pagani Design 2022 Orologio meccanico Orologio automatico di....",
+        "titolo": "RollsTimi",
+        "vetrina": "New",
+        "prezzo": "19.00",
+        "saldo": "29.00",
+        "sintesi": "Orologio Meccanico Interessante"
+    },
+    {
+        "quantita": 1,
+        "flag": true,
+        "imgs": [
+            "product-1.png",
+            "product-2.jpg",
+            "product-3.jpg",
+            "product-4.jpg",
+            "product-5.jpg",
+            "product-6.jpg"
+        ],
+        "info": [
+            {
+                "chiave": "Dimensioni prodotto",
+                "valore": "8.5 x 9 x 15.4 cm"
+            },
+            {
+                "chiave": "Marchio",
+                "valore": "Pandora"
+            },
+            {
+                "chiave": "Numero modello articolo",
+                "valore": "MAC0001"
+            },
+            {
+                "chiave": "Assemblaggio necessario",
+                "valore": "no"
+            },
+            {
+                "chiave": "Tipi di materiale",
+                "valore": "oro"
+            },
+            {
+                "chiave": "Peso articolo",
+                "valore": "1 g"
+            }
+        ],
+        "id": 2,
+        "categoria": 1,
+        "descrizione": "Cornetto della fortuna Pireta, Ciondolo portafortuna in vetro di Murano, Cordino con nodo regolabile, ipoallergenico, Fatto a mano, Festa della mamma, Made in Italy, Regalo portafortuna.",
+        "img": "product-2.jpg",
+        "anticipazione": "Cornetto della fortuna Pireta, Ciondolo portafortuna in vetr....",
+        "titolo": "Cornetto",
+        "vetrina": "Il piu venduto",
+        "prezzo": "39.00",
+        "saldo": "69.00",
+        "sintesi": "Cornetto port fortuna fortunato"
+    },
+    {
+        "quantita": 1,
+        "flag": true,
+        "imgs": [
+            "product-1.png",
+            "product-2.jpg",
+            "product-3.jpg",
+            "product-4.jpg",
+            "product-5.jpg",
+            "product-6.jpg"
+        ],
+        "info": [
+            {
+                "chiave": "Dimensioni prodotto",
+                "valore": "8.5 x 9 x 15.4 cm"
+            },
+            {
+                "chiave": "Marchio",
+                "valore": "Pandora"
+            },
+            {
+                "chiave": "Numero modello articolo",
+                "valore": "MAC0001"
+            },
+            {
+                "chiave": "Assemblaggio necessario",
+                "valore": "no"
+            },
+            {
+                "chiave": "Tipi di materiale",
+                "valore": "oro"
+            },
+            {
+                "chiave": "Peso articolo",
+                "valore": "1 g"
+            }
+        ],
+        "id": 3,
+        "categoria": 1,
+        "descrizione": "Anello artigianale,in alluminio anodizzato,pezzo unico!Modello Nodo Lunare Argento Opaco.",
+        "img": "product-3.jpg",
+        "anticipazione": "Anello artigianale,in alluminio anodizzato,pezzo unico!Model....",
+        "titolo": "Anello brutto",
+        "vetrina": "Il piu venduto",
+        "prezzo": "39.00",
+        "saldo": "69.00",
+        "sintesi": "Anello affascinante raffinato per uomo"
+    },
+    {
+        "quantita": 1,
+        "flag": true,
+        "imgs": [
+            "product-1.png",
+            "product-2.jpg",
+            "product-3.jpg",
+            "product-4.jpg",
+            "product-5.jpg",
+            "product-6.jpg"
+        ],
+        "info": [
+            {
+                "chiave": "Dimensioni prodotto",
+                "valore": "8.5 x 9 x 15.4 cm"
+            },
+            {
+                "chiave": "Marchio",
+                "valore": "Pandora"
+            },
+            {
+                "chiave": "Numero modello articolo",
+                "valore": "MAC0001"
+            },
+            {
+                "chiave": "Assemblaggio necessario",
+                "valore": "no"
+            },
+            {
+                "chiave": "Tipi di materiale",
+                "valore": "oro"
+            },
+            {
+                "chiave": "Peso articolo",
+                "valore": "1 g"
+            }
+        ],
+        "id": 4,
+        "categoria": 1,
+        "descrizione": "Collana Elegance con Semi di Soffione - Esprimi un desiderio. Soffione Gioielli  Dente di leone Tarassaco. Artigianale. Realizzato a mano. Maglie fini acciaio inox anallergico.",
+        "img": "product-4.jpg",
+        "anticipazione": "Collana Elegance con Semi di Soffione - Esprimi un desiderio....",
+        "titolo": "Collana Elegante",
+        "vetrina": "New",
+        "prezzo": "69.00",
+        "saldo": "",
+        "sintesi": "Collana affascinante raffinato per donna"
+    },
+    {
+        "quantita": 1,
+        "flag": true,
+        "imgs": [
+            "product-1.png",
+            "product-2.jpg",
+            "product-3.jpg",
+            "product-4.jpg",
+            "product-5.jpg",
+            "product-6.jpg"
+        ],
+        "info": [
+            {
+                "chiave": "Dimensioni prodotto",
+                "valore": "8.5 x 9 x 15.4 cm"
+            },
+            {
+                "chiave": "Marchio",
+                "valore": "Pandora"
+            },
+            {
+                "chiave": "Numero modello articolo",
+                "valore": "MAC0001"
+            },
+            {
+                "chiave": "Assemblaggio necessario",
+                "valore": "no"
+            },
+            {
+                "chiave": "Tipi di materiale",
+                "valore": "oro"
+            },
+            {
+                "chiave": "Peso articolo",
+                "valore": "1 g"
+            }
+        ],
+        "id": 5,
+        "categoria": 5,
+        "descrizione": "Dente di leone Esprimi un desiderio Vero Fiori Pendente Catena in Argento Sterling 925 Collane.",
+        "img": "product-5.jpg",
+        "anticipazione": "Dente di leone Esprimi un desiderio Vero Fiori Pendente Cate....",
+        "titolo": "Dente di leone",
+        "vetrina": "New",
+        "prezzo": "69.00",
+        "saldo": "",
+        "sintesi": "Il dente re della giungla"
+    },
+    {
+        "quantita": 1,
+        "flag": true,
+        "imgs": [
+            "product-1.png",
+            "product-2.jpg",
+            "product-3.jpg",
+            "product-4.jpg",
+            "product-5.jpg",
+            "product-6.jpg"
+        ],
+        "info": [
+            {
+                "chiave": "Dimensioni prodotto",
+                "valore": "8.5 x 9 x 15.4 cm"
+            },
+            {
+                "chiave": "Marchio",
+                "valore": "Pandora"
+            },
+            {
+                "chiave": "Numero modello articolo",
+                "valore": "MAC0001"
+            },
+            {
+                "chiave": "Assemblaggio necessario",
+                "valore": "no"
+            },
+            {
+                "chiave": "Tipi di materiale",
+                "valore": "oro"
+            },
+            {
+                "chiave": "Peso articolo",
+                "valore": "1 g"
+            }
+        ],
+        "id": 6,
+        "categoria": 5,
+        "descrizione": "CONO Medio di legno 5 x 10 cm PER SPIRALI di Energia - Erim Ighina.",
+        "img": "product-6.jpg",
+        "anticipazione": "CONO Medio di legno 5 x 10 cm PER SPIRALI di Energia - Erim ....",
+        "titolo": "Cono",
+        "vetrina": "New",
+        "prezzo": "19.00",
+        "saldo": "",
+        "sintesi": "Cono, geometricamente perfetto "
+    },
+    {
+        "quantita": 1,
+        "flag": true,
+        "imgs": [
+            "product-1.png",
+            "product-2.jpg",
+            "product-3.jpg",
+            "product-4.jpg",
+            "product-5.jpg",
+            "product-6.jpg"
+        ],
+        "info": [
+            {
+                "chiave": "Dimensioni prodotto",
+                "valore": "8.5 x 9 x 15.4 cm"
+            },
+            {
+                "chiave": "Marchio",
+                "valore": "Pandora"
+            },
+            {
+                "chiave": "Numero modello articolo",
+                "valore": "MAC0001"
+            },
+            {
+                "chiave": "Assemblaggio necessario",
+                "valore": "no"
+            },
+            {
+                "chiave": "Tipi di materiale",
+                "valore": "oro"
+            },
+            {
+                "chiave": "Peso articolo",
+                "valore": "1 g"
+            }
+        ],
+        "id": 7,
+        "categoria": 5,
+        "descrizione": "Made by Nami Cavigliera Surfer Uomo e Donna - Cavigliera Sottile Boho Hippie Etnico - Accessori Fatti a Mano per Festa in Spiaggia - Impermeabile e Regolabile (turchese & multi profondo) (Set di 2).",
+        "img": "product-7.jpg",
+        "anticipazione": "Made by Nami Cavigliera Surfer Uomo e Donna - Cavigliera Sot....",
+        "titolo": "Cavigliera",
+        "vetrina": "New",
+        "prezzo": "9.00",
+        "saldo": "",
+        "sintesi": "Cavigliera per donna gamba destra"
+    },
+    {
+        "quantita": 1,
+        "flag": true,
+        "imgs": [
+            "product-1.png",
+            "product-2.jpg",
+            "product-3.jpg",
+            "product-4.jpg",
+            "product-5.jpg",
+            "product-6.jpg"
+        ],
+        "info": [
+            {
+                "chiave": "Dimensioni prodotto",
+                "valore": "8.5 x 9 x 15.4 cm"
+            },
+            {
+                "chiave": "Marchio",
+                "valore": "Pandora"
+            },
+            {
+                "chiave": "Numero modello articolo",
+                "valore": "MAC0001"
+            },
+            {
+                "chiave": "Assemblaggio necessario",
+                "valore": "no"
+            },
+            {
+                "chiave": "Tipi di materiale",
+                "valore": "oro"
+            },
+            {
+                "chiave": "Peso articolo",
+                "valore": "1 g"
+            }
+        ],
+        "id": 8,
+        "categoria": 5,
+        "descrizione": "Orecchini Cuore Sacro - Orecchini donna - Orecchini pendenti - Orecchini votivi - Orecchini color oro (Perno piccolo (pallina)).",
+        "img": "product-8.jpg",
+        "anticipazione": "Orecchini Cuore Sacro - Orecchini donna - Orecchini pendenti....",
+        "titolo": "Orecchini",
+        "vetrina": "New",
+        "prezzo": "39.00",
+        "saldo": "69.00",
+        "sintesi": "Orecchini raffinati per donna"
+    },
+    {
+        "quantita": 1,
+        "flag": true,
+        "imgs": [
+            "product-1.png",
+            "product-2.jpg",
+            "product-3.jpg",
+            "product-4.jpg",
+            "product-5.jpg",
+            "product-6.jpg"
+        ],
+        "info": [
+            {
+                "chiave": "Dimensioni prodotto",
+                "valore": "8.5 x 9 x 15.4 cm"
+            },
+            {
+                "chiave": "Marchio",
+                "valore": "Pandora"
+            },
+            {
+                "chiave": "Numero modello articolo",
+                "valore": "MAC0001"
+            },
+            {
+                "chiave": "Assemblaggio necessario",
+                "valore": "no"
+            },
+            {
+                "chiave": "Tipi di materiale",
+                "valore": "oro"
+            },
+            {
+                "chiave": "Peso articolo",
+                "valore": "1 g"
+            }
+        ],
+        "id": 9,
+        "categoria": 1,
+        "descrizione": "Pagani Design 2022 Orologio meccanico Orologio automatico di lusso da uomo Resistente all'acqua 100 Lancette NH35A Acciaio inossidabile rivestito Vetro zaffiro Orologio meccanico da 40 mm 1733",
+        "img": "product-1.png",
+        "anticipazione": "Pagani Design 2022 Orologio meccanico Orologio automatico di....",
+        "titolo": "RollsTimi2",
+        "vetrina": "New",
+        "prezzo": "19.00",
+        "saldo": "29.00",
+        "sintesi": "Orologio Meccanico Interessante"
+    },
+    {
+        "quantita": 1,
+        "flag": true,
+        "imgs": [
+            "product-1.png",
+            "product-2.jpg",
+            "product-3.jpg",
+            "product-4.jpg",
+            "product-5.jpg",
+            "product-6.jpg"
+        ],
+        "info": [
+            {
+                "chiave": "Dimensioni prodotto",
+                "valore": "8.5 x 9 x 15.4 cm"
+            },
+            {
+                "chiave": "Marchio",
+                "valore": "Pandora"
+            },
+            {
+                "chiave": "Numero modello articolo",
+                "valore": "MAC0001"
+            },
+            {
+                "chiave": "Assemblaggio necessario",
+                "valore": "no"
+            },
+            {
+                "chiave": "Tipi di materiale",
+                "valore": "oro"
+            },
+            {
+                "chiave": "Peso articolo",
+                "valore": "1 g"
+            }
+        ],
+        "id": 10,
+        "categoria": 1,
+        "descrizione": "Cornetto della fortuna Pireta, Ciondolo portafortuna in vetro di Murano, Cordino con nodo regolabile, ipoallergenico, Fatto a mano, Festa della mamma, Made in Italy, Regalo portafortuna.",
+        "img": "product-2.jpg",
+        "anticipazione": "Cornetto della fortuna Pireta, Ciondolo portafortuna in vetr....",
+        "titolo": "Cornetto2",
+        "vetrina": "Il piu venduto",
+        "prezzo": "39.00",
+        "saldo": "69.00",
+        "sintesi": "Cornetto port fortuna fortunato"
+    },
+    {
+        "quantita": 1,
+        "flag": true,
+        "imgs": [
+            "product-1.png",
+            "product-2.jpg",
+            "product-3.jpg",
+            "product-4.jpg",
+            "product-5.jpg",
+            "product-6.jpg"
+        ],
+        "info": [
+            {
+                "chiave": "Dimensioni prodotto",
+                "valore": "8.5 x 9 x 15.4 cm"
+            },
+            {
+                "chiave": "Marchio",
+                "valore": "Pandora"
+            },
+            {
+                "chiave": "Numero modello articolo",
+                "valore": "MAC0001"
+            },
+            {
+                "chiave": "Assemblaggio necessario",
+                "valore": "no"
+            },
+            {
+                "chiave": "Tipi di materiale",
+                "valore": "oro"
+            },
+            {
+                "chiave": "Peso articolo",
+                "valore": "1 g"
+            }
+        ],
+        "id": 11,
+        "categoria": 1,
+        "descrizione": "Anello artigianale,in alluminio anodizzato,pezzo unico!Modello Nodo Lunare Argento Opaco.",
+        "img": "product-3.jpg",
+        "anticipazione": "Anello artigianale,in alluminio anodizzato,pezzo unico!Model....",
+        "titolo": "Anello brutto2",
+        "vetrina": "Il piu venduto",
+        "prezzo": "39.00",
+        "saldo": "69.00",
+        "sintesi": "Anello affascinante raffinato per uomo"
+    },
+    {
+        "quantita": 1,
+        "flag": true,
+        "imgs": [
+            "product-1.png",
+            "product-2.jpg",
+            "product-3.jpg",
+            "product-4.jpg",
+            "product-5.jpg",
+            "product-6.jpg"
+        ],
+        "info": [
+            {
+                "chiave": "Dimensioni prodotto",
+                "valore": "8.5 x 9 x 15.4 cm"
+            },
+            {
+                "chiave": "Marchio",
+                "valore": "Pandora"
+            },
+            {
+                "chiave": "Numero modello articolo",
+                "valore": "MAC0001"
+            },
+            {
+                "chiave": "Assemblaggio necessario",
+                "valore": "no"
+            },
+            {
+                "chiave": "Tipi di materiale",
+                "valore": "oro"
+            },
+            {
+                "chiave": "Peso articolo",
+                "valore": "1 g"
+            }
+        ],
+        "id": 12,
+        "categoria": 1,
+        "descrizione": "Collana Elegance con Semi di Soffione - Esprimi un desiderio. Soffione Gioielli  Dente di leone Tarassaco. Artigianale. Realizzato a mano. Maglie fini acciaio inox anallergico.",
+        "img": "product-4.jpg",
+        "anticipazione": "Collana Elegance con Semi di Soffione - Esprimi un desiderio....",
+        "titolo": "Collana Elegante2",
+        "vetrina": "New",
+        "prezzo": "69.00",
+        "saldo": "",
+        "sintesi": "Collana affascinante raffinato per donna"
+    },
+    {
+        "quantita": 1,
+        "flag": true,
+        "imgs": [
+            "product-1.png",
+            "product-2.jpg",
+            "product-3.jpg",
+            "product-4.jpg",
+            "product-5.jpg",
+            "product-6.jpg"
+        ],
+        "info": [
+            {
+                "chiave": "Dimensioni prodotto",
+                "valore": "8.5 x 9 x 15.4 cm"
+            },
+            {
+                "chiave": "Marchio",
+                "valore": "Pandora"
+            },
+            {
+                "chiave": "Numero modello articolo",
+                "valore": "MAC0001"
+            },
+            {
+                "chiave": "Assemblaggio necessario",
+                "valore": "no"
+            },
+            {
+                "chiave": "Tipi di materiale",
+                "valore": "oro"
+            },
+            {
+                "chiave": "Peso articolo",
+                "valore": "1 g"
+            }
+        ],
+        "id": 13,
+        "categoria": 5,
+        "descrizione": "Dente di leone Esprimi un desiderio Vero Fiori Pendente Catena in Argento Sterling 925 Collane.",
+        "img": "product-5.jpg",
+        "anticipazione": "Dente di leone Esprimi un desiderio Vero Fiori Pendente Cate....",
+        "titolo": "Dente di leone2",
+        "vetrina": "New",
+        "prezzo": "69.00",
+        "saldo": "",
+        "sintesi": "Il dente del re della giungla"
+    },
+    {
+        "quantita": 1,
+        "flag": true,
+        "imgs": [
+            "product-1.png",
+            "product-2.jpg",
+            "product-3.jpg",
+            "product-4.jpg",
+            "product-5.jpg",
+            "product-6.jpg"
+        ],
+        "info": [
+            {
+                "chiave": "Dimensioni prodotto",
+                "valore": "8.5 x 9 x 15.4 cm"
+            },
+            {
+                "chiave": "Marchio",
+                "valore": "Pandora"
+            },
+            {
+                "chiave": "Numero modello articolo",
+                "valore": "MAC0001"
+            },
+            {
+                "chiave": "Assemblaggio necessario",
+                "valore": "no"
+            },
+            {
+                "chiave": "Tipi di materiale",
+                "valore": "oro"
+            },
+            {
+                "chiave": "Peso articolo",
+                "valore": "1 g"
+            }
+        ],
+        "id": 14,
+        "categoria": 5,
+        "descrizione": "CONO Medio di legno 5 x 10 cm PER SPIRALI di Energia - Erim Ighina.",
+        "img": "product-6.jpg",
+        "anticipazione": "CONO Medio di legno 5 x 10 cm PER SPIRALI di Energia - Erim ....",
+        "titolo": "Cono2",
+        "vetrina": "New",
+        "prezzo": "19.00",
+        "saldo": "",
+        "sintesi": "Cono, geometricamente perfetto "
+    },
+    {
+        "quantita": 1,
+        "flag": true,
+        "imgs": [
+            "product-1.png",
+            "product-2.jpg",
+            "product-3.jpg",
+            "product-4.jpg",
+            "product-5.jpg",
+            "product-6.jpg"
+        ],
+        "info": [
+            {
+                "chiave": "Dimensioni prodotto",
+                "valore": "8.5 x 9 x 15.4 cm"
+            },
+            {
+                "chiave": "Marchio",
+                "valore": "Pandora"
+            },
+            {
+                "chiave": "Numero modello articolo",
+                "valore": "MAC0001"
+            },
+            {
+                "chiave": "Assemblaggio necessario",
+                "valore": "no"
+            },
+            {
+                "chiave": "Tipi di materiale",
+                "valore": "oro"
+            },
+            {
+                "chiave": "Peso articolo",
+                "valore": "1 g"
+            }
+        ],
+        "id": 15,
+        "categoria": 5,
+        "descrizione": "Made by Nami Cavigliera Surfer Uomo e Donna - Cavigliera Sottile Boho Hippie Etnico - Accessori Fatti a Mano per Festa in Spiaggia - Impermeabile e Regolabile (turchese & multi profondo) (Set di 2).",
+        "img": "product-7.jpg",
+        "anticipazione": "Made by Nami Cavigliera Surfer Uomo e Donna - Cavigliera Sot....",
+        "titolo": "Cavigliera2",
+        "vetrina": "New",
+        "prezzo": "9.00",
+        "saldo": "",
+        "sintesi": "Cavigliera per donna gamba destra"
+    },
+    {
+        "quantita": 1,
+        "flag": true,
+        "imgs": [
+            "product-1.png",
+            "product-2.jpg",
+            "product-3.jpg",
+            "product-4.jpg",
+            "product-5.jpg",
+            "product-6.jpg"
+        ],
+        "info": [
+            {
+                "chiave": "Dimensioni prodotto",
+                "valore": "8.5 x 9 x 15.4 cm"
+            },
+            {
+                "chiave": "Marchio",
+                "valore": "Pandora"
+            },
+            {
+                "chiave": "Numero modello articolo",
+                "valore": "MAC0001"
+            },
+            {
+                "chiave": "Assemblaggio necessario",
+                "valore": "no"
+            },
+            {
+                "chiave": "Tipi di materiale",
+                "valore": "oro"
+            },
+            {
+                "chiave": "Peso articolo",
+                "valore": "1 g"
+            }
+        ],
+        "id": 1,
+        "categoria": 5,
+        "descrizione": "Orecchini Cuore Sacro - Orecchini donna - Orecchini pendenti - Orecchini votivi - Orecchini color oro (Perno piccolo (pallina)).",
+        "img": "product-8.jpg",
+        "anticipazione": "Orecchini Cuore Sacro - Orecchini donna - Orecchini pendenti....",
+        "titolo": "Orecchini2",
+        "vetrina": "New",
+        "prezzo": "39.00",
+        "saldo": "69.00",
+        "sintesi": "Orecchini raffinati per donna"
+    }
+]

@@ -17,7 +17,6 @@ export class ProdottiComponent implements OnInit {
   prodotti: Array<Prodotto> = []
   dettaglio: Prodotto | undefined;
   loading: boolean = true;
-  hidden_page: boolean = false;
   search: string = "";
 
 
@@ -44,6 +43,7 @@ export class ProdottiComponent implements OnInit {
       })
   }
 
+
   getProdottiMock(search: string) {
 
     console.log("getProdottiMock", search)
@@ -51,19 +51,27 @@ export class ProdottiComponent implements OnInit {
     this.prodotti = []
     this.loading = true
 
-    setTimeout(() => {
+    this.clienteService.getProdottiMock("")
+      .pipe(finalize(() => {
+        //this.spinner.clear()
+      }))
+      .subscribe({
+        next: (result: any) => {
 
-      this.hidden_page = true
+          setTimeout(() => {
+            this.loading = false
+            this.prodotti = result
+          }, 3000);
+         
 
-      this.loading = false
-      this.prodotti = this.clienteService.getProdottiMock("")
-      setTimeout(() => {
-        this.hidden_page = false
-
-      }, 100);
-    }, 3000);
-
+        },
+        error: (error: any) => {
+          //this.alert.error(error);
+        }
+      })
   }
+
+
 
 
 
